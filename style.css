@@ -5,6 +5,10 @@ body {
     user-select: none; /* Standard syntax */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .emoji {
     width: 73px;
     height: 73px;
