@@ -47,7 +47,13 @@ nav {
 }
 
 .navbar {
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.scrolled {
+    border-bottom: 1px solid;
+    border-color: #BCBCBC;
 }
 
 .link {
@@ -78,6 +84,8 @@ nav {
     height: 23px;
 }
 
+/* HOME SECTION */
+
 .home {
     margin-top: 350px;
     margin-left: 170px;
@@ -99,6 +107,8 @@ hr.line {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+/* PROJECTS SECTION */
 
 .title {
     margin-top: 100px;
