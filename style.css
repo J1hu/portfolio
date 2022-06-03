@@ -102,11 +102,11 @@ nav {
     font-weight: bold;
 }
 
-hr.line {
-    border: 1px solid #000000;
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
+.line {
+    margin-top: 100px;
+    border-bottom: 2px solid #BCBCBC;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 /* PROJECTS SECTION */
@@ -153,4 +153,32 @@ hr.line {
     width: 300px;
     height: 300px;
     border-radius: 15px;
+}
+
+/* skills */
+
+.skill-title {
+    margin-top: 100px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.skill-container {
+    margin: 50px;
+    align-items: center;
+}
+
+.skill {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    float: left;
 }
