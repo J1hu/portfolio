@@ -5,6 +5,28 @@ body {
     user-select: none; /* Standard syntax */
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A9A9A9; 
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
+}
+
+
+/* page */
 html {
     scroll-behavior: smooth;
 }
