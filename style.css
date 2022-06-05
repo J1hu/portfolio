@@ -92,7 +92,7 @@ nav {
     margin-left: 170px;
 }
 
-.name {
+.name, .name1 {
     font-size: 5em;
     font-weight: bold;
 }
@@ -266,19 +266,25 @@ footer {
     }
 
     .emoji {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .name1, .name {
+        font-size: 4.5em;
+        font-weight: bold;
     }
 
     .position {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .title {
-        margin-left: 60px;
+        text-align: center;
         margin-top: 50px;
         font-size: 1.3em;
+        margin-left: 0;
     }
 
     .cards {
@@ -343,8 +349,8 @@ footer {
 
     .skill {
         margin: 10px;
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .about-container {
@@ -362,10 +368,10 @@ footer {
     }
 
     .about-content {
-        font-size: 1em;
+        font-size: .8em;
         padding-top: 50px;
         text-align: center;
-        padding: 70px 0;
+        padding: 50px 0;
     }
 
     .about-picture-holder {
@@ -375,22 +381,26 @@ footer {
     }
 
     .about-img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .contact-container {
-        margin: 50px 50px;
+        margin: 50px 20px;
+        padding-left: 30px;
         grid-template-columns: auto auto;
-        padding-left: 40px;
         grid-template-areas: "email email-content"
                              "phone phone-content"
                              "socmed socmed";
     }
     
     .email, .phone, .email-content, .phone-content {
-        font-size: .9em;
+        font-size: .7em;
         padding: 0 0;
         margin: 20px 0;
+    }
+
+    footer {
+        font-size: 0.7em;
     }
 }
