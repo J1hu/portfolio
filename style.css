@@ -237,3 +237,19 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* MEDIA QUERIES  */
+
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 1em;
+    }
+
+    body {
+        width: fit-content;
+    }
+
+    .home {
+        font-size: 1em;
+    }
+}
