@@ -259,7 +259,94 @@ footer {
 
 /* MEDIA QUERIES  */
 
-@media (max-width: 600px) {
+@media (max-width: 1550px) {
+    .cards {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-content {
+        padding: 15px;
+        display: inline;
+        text-align: center;
+    }
+
+    .card-container {
+        padding: 40px;
+        margin: 20px 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-imgs {
+        margin: 10px;
+        width: 320px;
+        height: 280px;
+        border-radius: 15px;
+    }
+
+    .card-title {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .card-desc {
+        font-size: 1em;
+    }
+
+    .about-container {
+        display: grid;
+        margin: 50px 70px;
+        grid-template-columns: auto;
+        grid-template-areas: "pic"
+                             "cont";
+    }
+
+    .about-content-holder {
+        display: flex;
+        justify-content: center;
+        grid-area: cont;
+    }
+
+    .about-content {
+        font-size: 1.5em;
+        padding-top: 50px;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .about-picture-holder {
+        display: flex;
+        justify-content: center;
+        grid-area: pic;
+    }
+
+    .about-img {
+        margin: 20px 0;
+        width: 400px;
+        height: 400px;
+    }
+
+    .contact-container {
+        margin: 50px 20px;
+        padding-left: 30px;
+        grid-template-columns: auto auto;
+        grid-template-areas: "email email-content"
+                             "phone phone-content"
+                             "socmed socmed";
+    }
+    
+    .email, .phone, .email-content, .phone-content {
+        font-size: 1em;
+        padding-left: 90px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 800px) {
     .navbar {
         font-size: .7em;
     }
@@ -417,3 +504,4 @@ footer {
         font-size: 0.7em;
     }
 }
+
