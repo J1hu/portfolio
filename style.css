@@ -45,6 +45,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: white;
+    z-index: 200;
 }
 
 .navbar {
@@ -123,6 +124,10 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.swiper {
+    width: 1700px;
 }
 
 .card-container {
@@ -291,12 +296,20 @@ footer {
         margin-top: 70px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     .card-content {
         padding: 15px;
         display: inline;
-        float: left;
+        text-align: center;
+    }
+
+    .card-container {
+        padding: 20px;
+        margin: 20px 70px;
+        display: flex;
+        justify-content: center;
     }
 
     .card-imgs {
@@ -316,7 +329,7 @@ footer {
     }
 
     .skill-title {
-        margin-top: 10px;
+        margin-top: 70px;
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
