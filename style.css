@@ -182,3 +182,57 @@ nav {
     display: inline;
     float: left;
 }
+
+/* about */
+
+.about-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px 100px 200px 200px;
+}
+
+.about-content {
+    padding-top: 160px;
+    font-size: 1.5em;
+    padding-right: 150px;
+}
+
+.about-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 500px;
+}
+
+/* contact me */
+.contact-container {
+    display: grid;
+    margin: 100px 50px;
+    grid-template-columns: auto auto;
+    grid-template-areas: "email email-content"
+                         "phone phone-content"
+                         "socmed socmed";
+}
+
+.email, .phone {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    padding-left: 30%;
+    margin: 50px;
+    grid-area: email phone;
+}
+
+.email-content, .phone-content {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: start;
+    padding-left: 30%;
+    margin: 50px;
+    grid-area: email-content phone-content;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
