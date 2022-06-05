@@ -242,7 +242,7 @@ footer {
 
 @media (max-width: 600px) {
     .navbar {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     body {
@@ -251,5 +251,24 @@ footer {
 
     .home {
         font-size: 1em;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .about-container {
+        grid-template-areas: "img img"
+                             "cont cont";
+    }
+
+    .about-content {
+        grid-area: cont;
+        text-align: center;
+    }
+
+    .about-img {
+        grid-area: img;
+        align-items: center;
     }
 }
