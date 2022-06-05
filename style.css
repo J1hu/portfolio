@@ -167,21 +167,35 @@ nav {
 }
 
 .skills {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-rows: auto auto;
+    grid-template-areas: "row1 row1"
+                         "row2 row2";
     margin-bottom: 200px;
 }
 
+.skills1 {
+    grid-area: row1;
+}
+
+.skills2 {
+    grid-area: row2;
+}
+
 .skill-container {
-    margin: 50px;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
 }
 
 .skill {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     display: inline;
     float: left;
+    margin: 30px 50px;
 }
 
 /* about */
@@ -242,33 +256,141 @@ footer {
 
 @media (max-width: 600px) {
     .navbar {
-        font-size: 1.5em;
-    }
-
-    body {
-        width: fit-content;
+        font-size: .7em;
     }
 
     .home {
-        font-size: 1em;
+        font-size: .4em;
+        margin-left: 60px;
+        margin-top: 200px;
     }
 
-    .title {
+    .emoji {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .position {
         font-size: 3em;
     }
 
+    .title {
+        margin-left: 60px;
+        margin-top: 50px;
+        font-size: 1.3em;
+    }
+
+    .cards {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-content {
+        padding: 15px;
+        display: inline;
+        float: left;
+    }
+
+    .card-imgs {
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .card-desc {
+        font-size: 1em;
+    }
+
+    .skill-title {
+        margin-top: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 100px;
+        grid-template-rows: 100px 100px;
+        grid-template-areas: "row1 row1"
+                             "row2 row2";
+    }
+
+    .skills1 {
+        grid-area: row1;
+    }
+
+    .skills2 {
+        grid-area: row2;
+    }
+
+    .skill-container {
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .skill {
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
     .about-container {
-        grid-template-areas: "img img"
-                             "cont cont";
+        display: grid;
+        margin: 50px 70px;
+        grid-template-columns: auto;
+        grid-template-areas: "pic"
+                             "cont";
+    }
+
+    .about-content-holder {
+        display: flex;
+        justify-content: center;
+        grid-area: cont;
     }
 
     .about-content {
-        grid-area: cont;
+        font-size: 1em;
+        padding-top: 50px;
         text-align: center;
+        padding: 70px 0;
+    }
+
+    .about-picture-holder {
+        display: flex;
+        justify-content: center;
+        grid-area: pic;
     }
 
     .about-img {
-        grid-area: img;
-        align-items: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact-container {
+        margin: 50px 50px;
+        grid-template-columns: auto auto;
+        padding-left: 40px;
+        grid-template-areas: "email email-content"
+                             "phone phone-content"
+                             "socmed socmed";
+    }
+    
+    .email, .phone, .email-content, .phone-content {
+        font-size: .9em;
+        padding: 0 0;
+        margin: 20px 0;
     }
 }
