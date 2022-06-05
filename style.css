@@ -208,7 +208,7 @@ nav {
 .about-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 100px 100px 200px 200px;
+    margin: 100px 200px;
 }
 
 .about-content {
@@ -263,6 +263,7 @@ footer {
     .home {
         margin-top: 170px;
     }
+
     .cards {
         margin-top: 70px;
         display: flex;
@@ -328,7 +329,7 @@ footer {
     }
 
     .about-img {
-        margin: 20px 0;
+        margin: 20px 40px;
         width: 400px;
         height: 400px;
     }
