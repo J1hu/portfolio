@@ -70,7 +70,7 @@
 						<a class="link" href="#contact">CONTACT</a>
 					</div>
 				</div>
-				<div>
+				<div id="burger">
 					<img
 						src="images/burger-bar.png"
 						alt="burger-icon"
@@ -99,6 +99,24 @@
 				</div>
 			</div>
 		</nav>
+
+		<!-- Responsive NavBar -->
+		<div id="burger-nav" class="active not-active">
+			<div id="nav-active-item">
+				<div class="nav-active-item">
+					<a class="link" href="#projects">PROJECTS</a>
+				</div>
+				<div class="nav-active-item">
+					<a class="link" href="#about">ABOUT</a>
+				</div>
+				<div class="nav-active-item">
+					<a class="link" href="#contact">CONTACT</a>
+				</div>
+				<div id="close" class="nav-active-item">
+					<img src="images/close.png" alt="close-icon" class="close-icon" />
+				</div>
+			</div>
+		</div>
 
 		<!-- home -->
 		<div class="home" id="home">
@@ -219,7 +237,7 @@
 		<footer>Created with ♥ by Jehu Casimiro</footer>
 	</body>
 	<script>
-		let navBar = document.getElementById("nav");
+		const navBar = document.getElementById("nav");
 		window.onscroll = function () {
 			if (window.scrollY > 20) {
 				navBar.classList.add("scrolled");
@@ -227,5 +245,24 @@
 				navBar.classList.remove("scrolled");
 			}
 		};
+
+		const navMenu = document.getElementById("burger-nav");
+		const burger = document.getElementById("burger");
+		const navActiveItem = document.getElementById("nav-active-item");
+		const closeNav = document.getElementById("close");
+
+		burger.addEventListener("click", () => {
+			navMenu.classList.remove("not-active");
+			burger.classList.add("not-active");
+		});
+
+		navActiveItem.addEventListener("click", () => {
+			navMenu.classList.add("not-active");
+			burger.classList.remove("not-active");
+		});
+
+		closeNav.addEventListener("click", () => {
+			navMenu.classList.add("not-active");
+		});
 	</script>
 </html>
