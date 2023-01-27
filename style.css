@@ -92,6 +92,10 @@ nav {
 	visibility: hidden;
 }
 
+.not-active {
+	display: none;
+}
+
 /* HOME SECTION */
 
 .home {
