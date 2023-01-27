@@ -562,7 +562,8 @@ img.burger-icon {
 		right: 0px;
 		bottom: 0px;
 		left: 0px;
-		padding-top: 200px;
+		padding-top: 120px;
+		padding-bottom: 200px;
 	}
 
 	div.nav-active-item {
