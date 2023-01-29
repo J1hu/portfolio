@@ -37,7 +37,7 @@ html {
 }
 
 nav {
-	padding-left: 70px;
+	padding-left: 45px;
 	padding-right: 40px;
 	overflow: hidden;
 	position: fixed;
@@ -213,6 +213,10 @@ nav {
 	display: inline;
 	float: left;
 	margin: 30px 50px;
+}
+
+.skill-item {
+	text-align: center;
 }
 
 /* about */
@@ -487,6 +491,11 @@ img.burger-icon {
 		height: 45px;
 	}
 
+	.skill-item {
+		text-align: center;
+		font-size: 0.8em;
+	}
+
 	.about-container {
 		display: grid;
 		grid-template-columns: auto auto;
@@ -586,5 +595,10 @@ img.burger-icon {
 		display: block;
 		height: 23px;
 		width: 23px;
+	}
+
+	.skill-item {
+		text-align: center;
+		font-size: 0.7em;
 	}
 }
