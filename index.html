@@ -80,7 +80,7 @@
 				<div class="nav-right">
 					<a
 						class="link"
-						href="https://www.facebook.com/jehuuuuuuuu/"
+						href="https://www.facebook.com/eu.aiio/"
 						target="_blank"
 						><img class="socmed" src="images/facebook.png" alt="facebook"
 					/></a>
@@ -236,33 +236,5 @@
 		<!-- footer -->
 		<footer>Created with ♥ by Jehu Casimiro</footer>
 	</body>
-	<script>
-		const navBar = document.getElementById("nav");
-		window.onscroll = function () {
-			if (window.scrollY > 20) {
-				navBar.classList.add("scrolled");
-			} else {
-				navBar.classList.remove("scrolled");
-			}
-		};
-
-		const navMenu = document.getElementById("burger-nav");
-		const burger = document.getElementById("burger");
-		const navActiveItem = document.getElementById("nav-active-item");
-		const closeNav = document.getElementById("close");
-
-		burger.addEventListener("click", () => {
-			navMenu.classList.remove("not-active");
-			burger.classList.add("not-active");
-		});
-
-		navActiveItem.addEventListener("click", () => {
-			navMenu.classList.add("not-active");
-			burger.classList.remove("not-active");
-		});
-
-		closeNav.addEventListener("click", () => {
-			navMenu.classList.add("not-active");
-		});
-	</script>
+	<script src="index.js"></script>
 </html>
