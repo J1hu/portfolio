@@ -161,6 +161,11 @@ nav {
 	margin-left: 30px;
 	margin-right: 30px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease-in-out;
+}
+
+.card-container:hover {
+	transform: translateY(-5px);
 }
 
 .card-content {
@@ -246,6 +251,11 @@ nav {
 	border-radius: 15px;
 	margin: 15px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease-in-out;
+}
+
+.skill-item:hover {
+	transform: translateY(-5px);
 }
 
 /* about */
@@ -338,7 +348,7 @@ img.burger-icon {
 	}
 
 	.card-container {
-		padding: 40px;
+		padding: 20px;
 		margin: 20px 250px;
 		display: flex;
 		justify-content: center;
@@ -352,13 +362,13 @@ img.burger-icon {
 	}
 
 	.card-title {
-		padding-top: 20px;
 		font-weight: bold;
+		padding-bottom: 10px;
 		font-size: 1em;
 	}
 
 	.card-desc {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	.about-container {
