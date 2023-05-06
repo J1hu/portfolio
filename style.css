@@ -1,8 +1,5 @@
 * {
 	font-family: "Poppins", sans-serif;
-	-webkit-user-select: none; /* Safari */
-	-ms-user-select: none; /* IE 10 and IE 11 */
-	user-select: none; /* Standard syntax */
 }
 
 /* scrollbar */
@@ -92,6 +89,12 @@ nav {
 	margin-right: 15px;
 	width: 23px;
 	height: 23px;
+}
+
+.socmed-footer {
+	margin: 20px;
+	width: 45px;
+	height: 45px;
 }
 
 .anchor {
@@ -262,7 +265,7 @@ nav {
 /* contact me */
 .contact-container {
 	display: grid;
-	margin: 100px 50px;
+	margin: 50px 50px;
 	grid-template-columns: auto auto;
 	grid-template-areas:
 		"email email-content"
@@ -298,6 +301,13 @@ footer {
 
 img.burger-icon {
 	display: none;
+}
+
+.center-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
 /* MEDIA QUERIES  */
