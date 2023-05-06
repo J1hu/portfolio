@@ -182,6 +182,13 @@ nav {
 	font-size: 13px;
 }
 
+.card-button {
+	padding-top: 20px;
+	text-align: right;
+	text-decoration: underline;
+	font-size: 13px;
+}
+
 .card-imgs {
 	margin: 20px;
 	width: 50px;
