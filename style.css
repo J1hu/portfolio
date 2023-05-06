@@ -410,6 +410,12 @@ img.burger-icon {
 	img.burger-icon {
 		display: none;
 	}
+
+	.socmed-footer {
+		margin: 10px;
+		width: 50px;
+		height: 50px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -591,6 +597,12 @@ img.burger-icon {
 	.skill-item {
 		padding: 5px;
 	}
+
+	.socmed-footer {
+		margin: 15px;
+		width: 30px;
+		height: 30px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -651,5 +663,11 @@ img.burger-icon {
 
 	.skill-item {
 		padding: 5px;
+	}
+
+	.socmed-footer {
+		margin: 20px;
+		width: 35px;
+		height: 35px;
 	}
 }
